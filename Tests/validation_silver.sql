@@ -1,15 +1,18 @@
-USE DataWarehouse;
-
 /*
 
-######## DATA QUALITY CHECKS ########
+****************************************
+Data validation: Check data in silver layer
+****************************************
+
+The purpose of this script:
+  - To test the quality of the data stored in the silver layer
+  - Sets of validation queries are separated into six sections
+  - Each table in the silver layer has its own section
+  - If observed results differ from expecation then the cause must be investigated
 
 */ 
 
 -- =========== silver.crm_cust_info table ===========
-
-SELECT * 
-FROM silver.crm_cust_info;
 
 -- Check for NULLs or duplicates in the primary key
 -- Expectation: No result
@@ -46,9 +49,6 @@ SELECT DISTINCT cst_gndr
 FROM silver.crm_cust_info;
 
 -- =========== silver.crm_prod_info table ===========
-
-SELECT *
-FROM silver.crm_prd_info;
 
 -- Check for NULLs or duplicates in the primary key
 -- Expectation: No result
@@ -107,9 +107,6 @@ FROM silver.crm_sales_details
 WHERE sls_order_dt > sls_ship_dt OR sls_order_dt > sls_due_dt
 
 -- =========== silver.erp_cust_AZ12 table ===========
-
-SELECT *
-FROM silver.erp_cust_AZ12
 
 -- Check format of first characters in CID column
 -- Expectation: One distinct substring returned
@@ -211,8 +208,8 @@ SELECT DISTINCT
 SUBCAT
 FROM silver.erp_px_cat_G1V2
 
--- Maintenance column has carriage return character
-
+-- Check Maintenance column carriage return character
+-- Expecation: Only words returned. No carriage return '↵' character
 SELECT
 Maintenance
 FROM silver.erp_px_cat_G1V2
