@@ -8,7 +8,7 @@ To take raw Customer Relationship Management (CRM) and Enterprise Resource Plann
 
 A SQL Server database will be created and follow a "medallion" architecture, that is:
 
-![data_architecture cropped](https://github.com/user-attachments/assets/d150cbbd-98c1-4a7f-b636-e41e5898782a)
+![data_architecture](https://github.com/user-attachments/assets/e7502100-bfad-41ca-98ef-632adba3fc90)
 
 
 **The data sources:**:
