@@ -1,7 +1,5 @@
 # Creating a SQL Server Data Warehouse
 
-_This is a data engineering project that can be used as the starting point for a data analytics project as it is creating a business-ready analytical database. 🥳_
-
 ## The Project's Aim   🎯  
 
 To take raw Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) data and make a business-ready relational database that can be used for analysis, reporting, machine learning, etc.
