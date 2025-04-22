@@ -4,7 +4,7 @@
 
 To take raw Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) data and make a business-ready relational database that can be used for analysis, reporting, machine learning, etc.
 
-## The Data Architecture 🏛️
+## The Data Warehouse Architecture 🏛️
 
 A SQL Server database will be created and follow a "medallion" architecture, that is:
 
