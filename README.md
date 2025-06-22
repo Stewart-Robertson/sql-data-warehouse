@@ -1,10 +1,10 @@
 # Creating a SQL Server Data Warehouse
 
-## The Project's Aim   🎯  
+## The Project's Aim 
 
 To take raw Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) data and make a business-ready relational database that can be used for analysis, reporting, machine learning, etc.
 
-## The Data Warehouse Architecture 🏛️
+## The Data Warehouse Architecture 
 
 A SQL Server database will be created and follow a "medallion" architecture, that is:
 
@@ -63,6 +63,6 @@ SQL is used at all stages of the process to load, clean, aggregate, integrate, s
 | Command Line | Configuring Docker container, configuring connection between ADS and Docker, moving files, etc. |
 | Drawio | Building diagrams e.g. Data Architecture, Data Flow, etc. |
 
-## My Links 😀
+## My Links
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stewart-robertson-data/) [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://public.tableau.com/app/profile/stewart5065/vizzes)
